@@ -1,0 +1,69 @@
+.notifications-container{
+    right: 3rem;
+    top: 5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.notification{
+    // right: 3rem;
+    // top: 5rem;
+    // position: absolute;
+    min-width: 30rem;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0px 0px 8px;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.8);
+    background-color: rgb(255, 255, 255);
+    max-width: 34.3rem;
+    min-width: 28.8rem;
+    min-height: 5.6rem;
+    color: rgb(30, 35, 41);
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    max-height: 17.8rem;
+    // padding: 1.6rem;
+    transform: translateY(-14rem);
+    opacity: 0;
+    &-on{
+        animation: fadeInDown 2s forwards;
+    }
+&-icon{
+    width: 3rem;
+    height: 3rem;
+    fill: red;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+&-content{
+    font-size: 1.7rem;
+}
+    &-warning{
+
+    }
+    &-success{
+
+    }
+    &-error{
+
+    }
+}
+
+@keyframes fadeInDown {
+    30%{
+        opacity: 1;
+        transform: translateY(.5rem);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+}

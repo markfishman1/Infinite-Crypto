@@ -1,0 +1,136 @@
+.markets-header{
+    // background: linear-gradient(45deg, #351F39, #726A95, #719FB0, #A0C1B8);
+    background: linear-gradient(45deg,#E8F9FD,#0b1426,#49858e, #0b1426);
+    //   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in infinite;
+    padding: 7rem 15rem;
+    height: 100vh;
+    // background: rgba(#0b1426);
+
+    margin-bottom: -5rem;
+    &-title{
+        color: #F7F7F7;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }   
+    &-movers{
+        width: 100%;
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            h1{
+                color:#F7F7F7 ;
+                font-size: 2rem;
+            }
+            p{
+                color:#F7F7F7 ;
+                font-size: 1.5rem;
+            }
+        }
+        &-lists{
+            display: flex;
+            justify-content: space-between;
+            &_gainers{
+                width: 49%;
+            }
+            &_losers{
+                width: 49%;
+            }
+        }
+        &-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 2.5rem;
+            border-radius: 6px;
+            transition: all .2s;
+            cursor: pointer;
+            &:not(:first-child):not(:last-child)::after{
+                content: '';
+                position: absolute;
+                width: 98%;
+                background-color: #b0b7c4;
+                height: 1.5px;
+                left: 1%;
+                bottom: 0;
+            }
+            &__name{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 3rem;
+                    width: 3rem;
+                    margin-right: 1rem;
+                }
+                div{
+                    h1{
+                        color: #F7F7F7;
+                    }
+                    p{
+                        font-size: 1.25rem;
+                        color: rgb(165, 165, 165);
+                    }
+
+                }
+                div:first-child{
+                    h1{
+                        color: #F7F7F7;
+                    }
+                }
+            }
+            &__change{
+                font-family: 'Open Sans',Arial,sans-serif;
+                // font-style: normal;
+                font-size: 1.25rem;
+                //  letter-spacing: -.35px;
+                font-weight: 600;
+                letter-spacing: 0.2rem;
+            }
+            &:first-child{
+                padding: 2rem 2.5rem 2rem 3rem;
+                img{
+                    height: 4rem;
+                    width: 4rem;
+                }
+                div{
+                  h1 {
+                      color: #0b1426;
+                  } 
+                }
+                .markets-header-movers-item__change{
+                    font-size: 1.75rem;
+                }
+            }
+            &:hover{
+                h1{
+                    color: #0b1426;
+                }
+            }
+        }
+        .item-gainer{
+            color:#38c073;
+            // color: #20bca4 ;
+            &:nth-child(1){
+                background-color:#e7f9eb;
+                // background-color:  #e7f9eb;
+            }
+            &:hover{
+                background-color:  #f1fbf3;
+            }
+        }
+        .item-loser{
+            color: rgb(227, 105, 105);
+            color:#fe5c7f;
+
+            &:nth-child(1){
+                background-color: #f8e4e6;
+            }
+            &:hover{
+                background-color: #ffeef0;
+            }
+        }
+    }
+}

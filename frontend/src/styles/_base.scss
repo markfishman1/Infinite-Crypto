@@ -1,0 +1,54 @@
+
+// @font-face {
+//     font-family: katarina;
+//     src: url(../../public/fonts/Karantina-Regular.ttf);
+// }
+// @font-face {
+//     font-family: cousine;
+//     src: url(../../public/fonts/Cousine-Regular.ttf);
+// }
+// @font-face {
+//     font-family: mp1;
+//     src: url(../../public/fonts/MPLUS1p-Regular.ttf);
+// }
+// @font-face {
+//     font-family: miriam;
+//     src: url(../../public/fonts/MiriamLibre-Regular.ttf);
+// }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%; //1rem = 10px 10px/16px=62.5
+
+    // @include respond(big-desktop) {
+    //     font-size: 75%; // 1rem = 12px 12/16= 75%
+    // }
+    // @include respond(tab-land) {
+    //     font-size: 56.25%; // 1rem = 9px 9/16=56.25%
+    // }
+    // @include respond(tab-port) {
+    //     font-size: 50%; //  1rem = 8px 8/16=50%
+    // }
+}
+body {
+    // padding: 0 3rem;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+    // @include respond(tab-port) {
+    //     padding: 0;
+    // }
+}

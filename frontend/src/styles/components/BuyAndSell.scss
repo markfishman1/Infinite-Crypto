@@ -1,0 +1,199 @@
+.buy-and-sell-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &-left{
+        // background-color:$color-secondary-dark;
+        border-radius: 5px;
+        width: 50%;
+        padding: 2rem;
+        color: $color-primary-white;
+        margin-top: 3rem;
+        h1{
+            font-size: 2rem;
+            margin: 2rem;
+        }
+        h2{
+            margin: 2rem;
+            font-size: 1.5rem;
+            color: $color-light-3;
+        }
+        hr{
+            border-top: 1px solid $color-light-3;
+            border-bottom: none;
+        }
+        &-steps{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            &__item{
+                background-color: $color-primary-dark;
+                display: flex;
+                // flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2rem 4rem;
+                width: 48%;
+                border-radius: 5px;
+                
+                svg{
+                    margin-bottom: 1.5rem;
+                    width: 6rem;
+                    height: 6rem;
+                    fill:$color-primary-blue;
+                    // fill:$color-secondary-blue2;
+                }
+            }
+        }
+        
+    }
+    &-right{
+        padding: 0rem 5rem;
+        // background-color: aqua;
+        width: 50%;
+        &-navbar{
+            ul{
+                display: flex;
+                justify-content: center;
+                color: white;
+                list-style: none;
+                font-size: 2.5rem;
+                li{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+        }
+        &-inputs{
+            background-color: $color-secondary-dark;
+            padding: 2rem;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            &-item{
+                
+                h1{
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                    color: $color-primary-white;
+                }
+                &__input{
+                    background-color: $color-secondary-dark;
+                    border: solid 2px white;
+                    display: flex;
+                    align-items: center;
+                    padding: 2rem 1rem;
+                    // justify-content: flex-end;
+                    &__list{
+                        display: flex;
+                        align-items: center;
+                        // justify-content: space-between;
+                        // width: 30%;
+                        // background-color: blue;
+                        // &:not(:last-child){
+                        //     margin-left: 5rem;
+                        // }
+                     
+                        img{
+                            height:3rem;
+                            width: 4rem;
+                            margin-right: .5rem;
+                        }
+                        h2{
+                            line-height: 100%;
+                            font-size: 1.5rem;
+                            color: $color-primary-white;
+                            margin-right: 1rem;
+                        }
+                        svg{
+                            height: 2rem;
+                            width: 2rem;
+                            fill: $color-light-3;
+                        }
+                      
+                    }
+                    input{
+                        background-color: $color-secondary-dark;
+                        background-color: transparent;
+                        color: $color-light-3;
+                        height: 3rem;
+                        border-radius: 4px;
+                        border: none;
+                        font-size: 2rem;
+                        // width: 70%;
+                        text-align: right;
+                        width: 80%;
+                        &:focus{
+                            outline: none;
+                            direction: rtl;
+                        }
+                    }
+                }
+                &__icons{
+                    // order:2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    padding: 2rem;
+                    svg{
+                        width: 3rem;
+                        height: 4rem;
+                        // background-color: antiquewhite;
+                        fill:$color-primary-blue;
+                        // fill:$color-secondary-blue2;
+                    }
+                    
+                }
+
+            }
+           
+        }
+        &-action{
+            // padding-top: 1.5rem;
+            background-color: $color-secondary-dark;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            // align-items: center;
+            // padding-left: 2rem;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+
+            &__price{
+                color: $color-primary-white;
+                // font-size: 2rem;
+                // padding-left: 2rem;
+            }
+            h2{
+                color: $color-light-3;
+                // padding-left: 2rem;
+
+            }
+            &__button{
+            
+                width: 100%;
+                margin-top: 1.5rem;
+                background-color: $color-primary-blue;
+                // background-color: $color-secondary-blue2;
+                height: 5rem;
+                border-radius: 3px;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                cursor: pointer;
+                &__links{
+                    color: #60c8d8;
+                    color: #0b1426;
+
+                }
+                
+            }
+        }
+    }
+}

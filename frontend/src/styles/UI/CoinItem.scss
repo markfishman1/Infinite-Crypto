@@ -1,0 +1,144 @@
+.coin-item{
+    color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    // justify-content: space-between;
+    border-bottom: 4px solid rgba(#0b1426, 0.79);
+    // border-bottom: 4px solid rgba(#45405a, 0.79);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(10, 40, 65);
+    &:hover{
+        background-color: rgba(38, 56, 135, 0.637);
+    }
+    &__name{
+        display: flex;
+        align-items: center;
+        min-width: 25%;
+        margin-right: 5rem;
+        // white-space: normal;
+        max-width: 10rem;
+        &__star__icon{
+            width: 2rem;
+            height: 2rem;
+            margin:0 -.5rem 0 2rem;
+            cursor: pointer;
+            use{
+                transition: all .33s ease;
+                fill: transparent;
+                stroke: hsla(0,0%,100%,.7);
+                stroke-width: .5;
+            }
+            use:last-child{
+                transform: scale(.33);
+                transform-origin: center;
+                opacity: 0;
+                fill: #ffbf00;
+                stroke: #ffbf00;
+                
+            }
+            &.active use:last-child{      
+                    transform: none;
+                    opacity: 1;
+                    height: 5rem;
+                    transition: all .5s cubic-bezier(.19,2.41,.45,.94);
+                    fill: #ffbf00; 
+            }
+
+            &__star__icon__modal{
+
+            }
+        }
+        img{
+            height: 3rem;
+            width: 3rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+        p:first-of-type{
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+        p:last-of-type{
+            color: rgba( #F7F7F7, 0.687);
+            margin-right: 2rem;
+            font-size: 1rem;
+        }
+    }
+    &__price{
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        min-width: 20%;
+        p:last-child{
+            direction: rtl;
+        }
+        .gaining{
+            color: #20bca4 ;
+        }
+        .losing{
+            color:#f77b95;
+        }
+        // padding: 1rem 1.5rem;
+    }
+    &__marketcap{
+        margin-left: 10rem;
+        min-width: 20%;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 20%;
+
+        button{
+            border: none;
+            background-color: #2d92e5;
+            padding:1rem 2rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 15px;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 1.5rem;
+            }
+        }
+        
+        
+    }
+    .added{
+        background-color:#ffbf00;
+    }
+}
+.fadeout{
+    display: none;
+    animation: fadeOutLeft 2s forwards;
+}
+.coin-image-fade-in{
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    opacity: 0;
+    animation: fadeInLeft 1s forwards
+}
+@keyframes fadeInLeft {
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOutLeft {
+    90%{
+        opacity: 0;
+        transform: translateX(-100%);
+        background-color: #ffbf00;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-100%);
+        background-color: #ffbf00;
+    }
+    
+}

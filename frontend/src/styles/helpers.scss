@@ -1,0 +1,77 @@
+.global-bg{
+    background: linear-gradient(45deg,#E8F9FD,#0b1426,#49858e, #0b1426);
+    //   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in infinite;
+    padding: 7rem 15rem;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.margin-right-s{
+    margin-right: 1rem;
+}
+.margin-right-m{
+    margin-right: 2rem;
+}
+.bg-transpearant{
+ background-color: transparent;
+}
+.gaining{
+ color: $color-primary-green;
+}
+.losing{
+    color:$color-primary-red;
+}
+
+.coin-page-content-selected{
+    padding-bottom: .5rem;
+    border-bottom:solid 3px #60c8d8;
+}
+.buy-and-sell-selected{
+    border-bottom:solid 5px $color-primary-blue ;
+    // border-bottom:solid 5px $color-secondary-blue2 ;
+
+}
+.mt-1-5{
+    margin-top:1.5rem;
+}
+.bold{
+    font-weight: 600;
+}
+
+.max-height-10{
+    max-height: 10rem;
+}
+.display-none{
+    display: none;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.order-3{
+    order:3;
+}
+.order-1{
+    order:1;
+}
+.order-2{
+    order:2;
+}

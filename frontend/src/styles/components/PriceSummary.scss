@@ -1,0 +1,34 @@
+.price-summary{
+    margin-bottom: 1.5rem;
+    &-title{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        h1{
+            font-size: 2rem;
+        }
+        span{
+            font-size: 1.3rem;
+            border-radius: 3px;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+            padding:0.2rem 0.7rem;
+            font-weight: 700;
+            color: $color-primary-green;
+            background-color: #E6FAF6;
+        }
+    }
+    &-content{
+        p{
+            margin-bottom: 1rem;
+        }
+        hr{
+            opacity: 0.6;
+            border: 0;
+            border-color: inherit;
+            border-style: solid;
+            border-bottom-width: 1px;
+            width: 100%;
+        }
+    }
+}

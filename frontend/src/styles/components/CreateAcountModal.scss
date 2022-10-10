@@ -1,0 +1,171 @@
+.account-creation-modal{
+    z-index: -10;
+    opacity: 0;
+    padding: 2.5rem 5rem;
+    width: 80%;
+    height: 70%;
+    background-color: aqua;
+    position: absolute;
+    // display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    // -webkit-box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.63); 
+    box-shadow: 0px 0px 22px 2px rgba(255, 255, 255, 0.63);
+    background-color: #0b1426;
+    font-family: kallisto, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    transition: all 1s 1s;
+    color: #f7f7f7;
+    @keyframes fadeIn{
+        to{
+            opacity: 1;
+            z-index: 100;
+        }
+    };
+    &-welcome{
+        min-height: 20%;
+        h1{
+            position: relative;
+            font-size: 3rem;
+            width: max-content;
+
+            &::before,&::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right:0;
+                bottom: 0;
+            }
+            &::before{
+                background:#0b1426;
+                animation: typeWriter 4s 1s steps(34) forwards;
+            }
+            &::after{
+                width: 0.125em;
+                background-color: #f7f7f7;
+                animation: typeWriter 4s 1s steps(34) forwards,blink 750ms steps(34)infinite;
+            }
+        }
+        p{
+            font-size: 2rem;
+            opacity: 0;
+            transform: translateX(5rem);
+            animation: fadeInUp 1s 5s forwards;
+        }
+
+    
+
+    }
+    &-tabs{
+        max-height: 80%;
+        min-height: 79.9%;
+        opacity: 0;
+        transform: translateX(-5rem);
+        animation: fadeInUp 3s 5s forwards;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        &__first{
+            // max-width: 100%;
+            &__title{
+                height: 50%;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            &__list{
+                // min-width: 100%;
+                height: 14rem;
+                // height: 50%;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 13px;
+                  }
+                  
+                  /* Track */
+                  &::-webkit-scrollbar-track {
+                    background:#f7f7f7; 
+                  }
+                   
+                  /* Handle */
+                  &::-webkit-scrollbar-thumb {
+                    background: #2d92e5; 
+                  }
+                  
+                  /* Handle on hover */
+                  &::-webkit-scrollbar-thumb:hover {
+                    transition: all .2s;
+                    background: #5fa5de; 
+                  }
+            }
+        }
+        &__second{
+            height: 100%;
+            p{
+                font-size: 2rem;
+            }
+        }
+        &__actions{ 
+            // position: static;
+            display: flex;
+            justify-content: flex-end;   
+            // bottom: 2rem;
+            // right: 2rem;     
+            button{
+                border: none;
+                background-color: #2d92e5;
+                padding:1rem 2rem;
+                color: #fff;
+                font-size: 1.5rem;
+                font-weight: 600;
+                border-radius: 15px;
+                cursor: pointer;
+                &:first-child{
+                    margin-right: 1.5rem;
+                }   
+            } 
+        }
+    }
+
+    @keyframes typeWriter {
+        to{
+            left: 100%;
+        }   
+    }
+    @keyframes blink{
+        to{
+            background: transparent;
+        }
+    }
+    @keyframes fadeInUp{
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeInLeft{
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+.modal-list-price{
+    min-width: 20%;
+}
+.modal-list-name{
+    min-width: 20%;
+}
+.modal-list-marketcap{
+    min-width: 20%;
+}
+.modal-list-action{
+    min-width:20%
+}
+.account-modal-open{
+    animation: fadeIn 1s forwards;
+}
+
