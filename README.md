@@ -11,10 +11,10 @@ Track, trade, and build a portfolio with not risk.
 1. Download the repository directly.(Click on the green button(Code) and then Click on Download Zip)
 2. Clone the repository 
 ```
-$ git clone markfishman1/Infinite-Crypto
+$ git clone https://github.com/markfishman1/Infinite-Crypto.git
 ```
 
-- Open terminals both for Clien and Server
+- Open terminals both for Client and Server
 ```
 cd frontend
 cd backend
