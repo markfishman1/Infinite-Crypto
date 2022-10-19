@@ -9,7 +9,10 @@ Track, trade, and build a portfolio with not risk.
 ## How to use ?
 - Download the repository using one way of the following.
 1. Download the repository directly.(Click on the green button(Code) and then Click on Download Zip)
-2. Clone the repository gh repo clone markfishman1/Infinite-Crypto
+2. Clone the repository 
+```
+$ git clone markfishman1/Infinite-Crypto
+```
 
 - Open terminals both for Clien and Server
 ```
