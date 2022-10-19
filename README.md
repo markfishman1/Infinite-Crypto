@@ -1,6 +1,6 @@
 # Infinite-Crypto
 A demo trading platform of your favorite Crypto currencies.
-Track, trade, and build a portfolio with not risk.
+Track, trade, and build a portfolio with no risk.
 ### Note*, This project is not finished yet and missing some features. But, you can still use it and have impression on my work :)
 ## Why I built this project?
 - I really love finances, crypto and investing in general, so I made an app to practice trading with no risk.
