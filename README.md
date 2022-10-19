@@ -6,7 +6,7 @@ crypto coins. (Work In Progress)
 1.I really love finances , and investing in usuall. Therefore, I made an app to keep a track on coins and investing for practice.
 2.To learn new technologies and sharpen my tools as a web-developer in order to find a job.
 
-##How to use ?
+## How to use ?
 1)
 First way: Clone the repository : git clone https://github.com/RazAbk/MoneyPipe.git
 Second way: download the repository directly.
