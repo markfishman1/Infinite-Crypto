@@ -7,7 +7,7 @@ crypto coins. (Work In Progress)
 2.To learn new technologies and sharpen my tools as a web-developer in order to find a job.
 
 ## How to use ?
-1)First way: Clone the repository : git clone https://github.com/RazAbk/MoneyPipe.git
+1)First way: Clone the repository : git clone markfishman1/Infinite-Crypto
   Second way: download the repository directly.
 
 2)Then, open two terminals both for client and server.
