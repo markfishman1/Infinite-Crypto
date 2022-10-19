@@ -18,4 +18,5 @@ crypto coins. (Work In Progress)
 
 4)Run both clien and server using npm start.
 
-
+## Note* 
+The project is not finished yet and missing alot of features, yet, you can still have a look and have an impression on my work :)
