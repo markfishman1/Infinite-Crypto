@@ -36,8 +36,10 @@ function MarketsHeader() {
             return coinList;
         }
     };
+    const pushNotification = () => {};
     return (
         <section className="markets-header">
+            <button onClick={pushNotification}>Push Notification</button>
             <h1 className="markets-header-title">Markets</h1>
             <div className="markets-header-movers">
                 <div className="markets-header-movers__header">

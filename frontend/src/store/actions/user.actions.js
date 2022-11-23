@@ -9,7 +9,8 @@ export const login = (userCred) => {
         try {
             const user = await authService.login(userCred);
             console.log('user from userActions', user);
-            dispatch(userActions.login(user));
+            return user ? dispatch(userActions.login(user)) : false;
+            // if (user) dispatch(userActions.login(user));
         } catch (err) {}
     };
 };

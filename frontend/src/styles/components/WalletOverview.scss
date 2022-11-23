@@ -1,0 +1,40 @@
+.wallet-overview{
+    // padding: 3rem 4rem;
+    overflow: hidden;
+    &-header{
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 3rem 3rem;
+        justify-content: space-between;
+        background-color: $color-light-3;
+        &__title{
+            font-size: 3rem;
+        }
+        &__actions{
+            display: flex;
+            align-items: center;
+            &__item:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+    &-balance{
+        padding: 10rem 3rem;
+        display: flex;
+        &__item:not(:last-child){
+            margin-right: 5rem;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            // justify-content: left;
+            p{
+                font-size: 2rem;
+                color: $color-primary-white;
+            }
+        }
+    }
+    
+}

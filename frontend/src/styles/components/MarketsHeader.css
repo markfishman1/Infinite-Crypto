@@ -1,0 +1,166 @@
+.markets-header {
+  background: linear-gradient(45deg, #E8F9FD, #0b1426, #49858e, #0b1426);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease-in infinite;
+          animation: gradient 15s ease-in infinite;
+  padding: 7rem 15rem;
+  height: 100vh;
+  margin-bottom: -5rem;
+}
+
+.markets-header-title {
+  color: #F7F7F7;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.markets-header-movers {
+  width: 100%;
+}
+
+.markets-header-movers__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.markets-header-movers__header h1 {
+  color: #F7F7F7;
+  font-size: 2rem;
+}
+
+.markets-header-movers__header p {
+  color: #F7F7F7;
+  font-size: 1.5rem;
+}
+
+.markets-header-movers-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.markets-header-movers-lists_gainers {
+  width: 49%;
+}
+
+.markets-header-movers-lists_losers {
+  width: 49%;
+}
+
+.markets-header-movers-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+  border-radius: 6px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.markets-header-movers-item:not(:first-child):not(:last-child)::after {
+  content: '';
+  position: absolute;
+  width: 98%;
+  background-color: #b0b7c4;
+  height: 1.5px;
+  left: 1%;
+  bottom: 0;
+}
+
+.markets-header-movers-item__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.markets-header-movers-item__name img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.markets-header-movers-item__name div h1 {
+  color: #F7F7F7;
+}
+
+.markets-header-movers-item__name div p {
+  font-size: 1.25rem;
+  color: #a5a5a5;
+}
+
+.markets-header-movers-item__name div:first-child h1 {
+  color: #F7F7F7;
+}
+
+.markets-header-movers-item__change {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.markets-header-movers-item:first-child {
+  padding: 2rem 2.5rem 2rem 3rem;
+}
+
+.markets-header-movers-item:first-child img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.markets-header-movers-item:first-child div h1 {
+  color: #0b1426;
+}
+
+.markets-header-movers-item:first-child .markets-header-movers-item__change {
+  font-size: 1.75rem;
+}
+
+.markets-header-movers-item:hover h1 {
+  color: #0b1426;
+}
+
+.markets-header-movers .item-gainer {
+  color: #38c073;
+}
+
+.markets-header-movers .item-gainer:nth-child(1) {
+  background-color: #e7f9eb;
+}
+
+.markets-header-movers .item-gainer:hover {
+  background-color: #f1fbf3;
+}
+
+.markets-header-movers .item-loser {
+  color: #e36969;
+  color: #fe5c7f;
+}
+
+.markets-header-movers .item-loser:nth-child(1) {
+  background-color: #f8e4e6;
+}
+
+.markets-header-movers .item-loser:hover {
+  background-color: #ffeef0;
+}
+/*# sourceMappingURL=MarketsHeader.css.map */

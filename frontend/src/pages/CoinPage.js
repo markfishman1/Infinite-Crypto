@@ -6,7 +6,7 @@ import News from '../components/News';
 import { fetchCoinData } from '../store/actions/app-actions';
 import PriceSummary from './../components/PriceSummary';
 import { utilService } from '../services/util.service';
-
+import Chart from '../components/UI/Chart';
 function CoinPage(props) {
     const { id: coinId } = useParams();
     console.log('coinId', coinId);
@@ -17,7 +17,7 @@ function CoinPage(props) {
     const user = useSelector((state) => state.user.loggedUser);
     const navigate = useNavigate();
     const coinData = useSelector((state) => state.app.coinData);
-
+    console.log(coinData);
     useEffect(() => {
         dispatch(fetchCoinData(coinId.toLocaleLowerCase()));
     }, [dispatch, coinId]);
@@ -45,7 +45,9 @@ function CoinPage(props) {
         <>
             <section className="coin-page">
                 <div className="coin-page-left">
-                    <div className="coin-page-left-chart"></div>
+                    <div className="coin-page-left-chart">
+                        <Chart symbol={coinData.symbol} />
+                    </div>
                     <div className="coin-page-left-content">
                         <ul className="coin-page-left-content__navbar">
                             <li

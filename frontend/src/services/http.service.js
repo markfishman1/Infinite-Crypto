@@ -2,7 +2,8 @@ import Axios from 'axios';
 // import router from '../router/index.js';
 
 // const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/' : '127.0.0.1:5000/api/';
-const BASE_URL = '127.0.0.1:5000/api/';
+// const BASE_URL = '127.0.0.1:5000/api/';
+const BASE_URL = 'http://localhost:5000/api';
 var axios = Axios.create({
     withCredentials: true,
 });
@@ -12,7 +13,7 @@ export const httpService = {
         return ajax(endpoint, 'GET', data);
     },
     post(endpoint, data) {
-        console.log(`${BASE_URL}${endpoint}`, data, endpoint);
+        console.log(`${BASE_URL}${endpoint}`, data);
         return ajax(endpoint, 'POST', data);
     },
     put(endpoint, data) {

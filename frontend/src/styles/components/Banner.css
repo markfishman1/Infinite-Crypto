@@ -1,0 +1,72 @@
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #E8F9FD, #0b1426, #49858e, #0b1426);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease-in infinite;
+          animation: gradient 15s ease-in infinite;
+}
+
+.banner-container {
+  height: 60%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-container-left {
+  width: 50%;
+  color: #F7F7F7;
+}
+
+.banner-container-left h1 {
+  font-size: 6rem;
+}
+
+.banner-container-left p {
+  font-size: 3rem;
+}
+
+.banner-container-left p span {
+  color: #3d4447;
+}
+
+.banner-container-right {
+  background-image: src("/public/images/server.png");
+  width: 50%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=Banner.css.map */

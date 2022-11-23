@@ -1,5 +1,6 @@
 import { appActions } from '../reducers/app-reducer';
 import { localStorageService } from '../../services/local-storage-service';
+import { apiService } from '../../services/apiService';
 
 const fetchData = async (url) => {
     const response = await fetch(url);
@@ -49,6 +50,7 @@ export const fetchCoinList = (category = null) => {
                 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=2&sparkline=false'
             );
             const coinList = coinListFirst.concat(coinListSecond);
+            apiService.insertCoinData(coinList);
             // console.log('coinLists', coinLists);
             dispatch(appActions.setCoinList(coinList));
         } catch (err) {

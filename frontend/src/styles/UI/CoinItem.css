@@ -1,0 +1,201 @@
+.coin-item {
+  color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  border-bottom: 4px solid rgba(11, 20, 38, 0.79);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #0a2841;
+}
+
+.coin-item:hover {
+  background-color: rgba(38, 56, 135, 0.637);
+}
+
+.coin-item__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 25%;
+  margin-right: 5rem;
+  max-width: 10rem;
+}
+
+.coin-item__name__star__icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 -.5rem 0 2rem;
+  cursor: pointer;
+}
+
+.coin-item__name__star__icon use {
+  -webkit-transition: all .33s ease;
+  transition: all .33s ease;
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.7);
+  stroke-width: .5;
+}
+
+.coin-item__name__star__icon use:last-child {
+  -webkit-transform: scale(0.33);
+          transform: scale(0.33);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 0;
+  fill: #ffbf00;
+  stroke: #ffbf00;
+}
+
+.coin-item__name__star__icon.active use:last-child {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  height: 5rem;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 2.41, 0.45, 0.94);
+  transition: all 0.5s cubic-bezier(0.19, 2.41, 0.45, 0.94);
+  fill: #ffbf00;
+}
+
+.coin-item__name img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.coin-item__name p:first-of-type {
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.coin-item__name p:last-of-type {
+  color: rgba(247, 247, 247, 0.687);
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+.coin-item__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 20%;
+}
+
+.coin-item__price p:last-child {
+  direction: rtl;
+}
+
+.coin-item__price .gaining {
+  color: #20bca4;
+}
+
+.coin-item__price .losing {
+  color: #f77b95;
+}
+
+.coin-item__marketcap {
+  margin-left: 10rem;
+  min-width: 20%;
+}
+
+.coin-item__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-width: 20%;
+}
+
+.coin-item__actions button {
+  border: none;
+  background-color: #2d92e5;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.coin-item__actions button:first-child {
+  margin-right: 1.5rem;
+}
+
+.coin-item .added {
+  background-color: #ffbf00;
+}
+
+.fadeout {
+  display: none;
+  -webkit-animation: fadeOutLeft 2s forwards;
+          animation: fadeOutLeft 2s forwards;
+}
+
+.coin-image-fade-in {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  opacity: 0;
+  -webkit-animation: fadeInLeft 1s forwards;
+          animation: fadeInLeft 1s forwards;
+}
+
+@-webkit-keyframes fadeInLeft {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOutLeft {
+  90% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #ffbf00;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #ffbf00;
+  }
+}
+
+@keyframes fadeOutLeft {
+  90% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #ffbf00;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    background-color: #ffbf00;
+  }
+}
+/*# sourceMappingURL=CoinItem.css.map */

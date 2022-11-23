@@ -1,0 +1,39 @@
+.trading-panel{
+    background-color: $color-primary-dark;
+    &-summary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-primary-white;
+        padding: 1rem 3rem;
+        p{
+            font-size: 2rem;
+        }
+        &-balance{
+            display: flex;
+            &__item{
+                font-size: 2rem;
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 1.5rem;
+                    color: $color-light-3;
+                }
+            }
+            &__item:not(:last-child){
+                margin-right: 5rem;
+            }
+        }
+    }
+    color: $color-primary-white;
+    &__tabs{
+        display: flex;
+        align-items: center;        
+        transition: color .2s ease;
+        font-size: 1.5rem;
+        padding: 0 2rem;
+        &__item{
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.user-profile{
+    // width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5.5fr;
+    &-sidebar{
+        background-color: $color-light-1;
+        border-right: 2px solid $color-dark-1;
+        &__nav{
+            display: flex;
+            flex-direction: column;
+            li{
+                transition: all .2s;
+                font-size: 1.5rem;
+                text-decoration: none;
+                padding: 2rem 1rem;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: $color-light-3;
+                }
+                svg{
+                    width: 4rem;
+                    height: 4rem;
+                    margin-right: 1.5rem;
+                }
+                .wallet-icon , .logout-icon{
+                    height: 3rem;
+                    width: 4rem;
+                }
+                a{
+                    text-decoration: none;
+                }
+              
+            }
+        }
+    }
+    &-main{
+        background: linear-gradient(45deg,#E8F9FD,#0b1426,#49858e, #0b1426);
+        // background: linear-gradient(45deg,#E8F9FD,#A5C9CA,#395B64);
+        background-size: 400% 400%;
+        animation: gradient 15s ease-in infinite;
+    }
+}

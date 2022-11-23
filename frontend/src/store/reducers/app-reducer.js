@@ -32,6 +32,7 @@ const appSlice = createSlice({
             losers: [],
             gainers: [],
         },
+        positionsTabsOptions: ['Symbol'],
         favCoins: localStorage.getItem('favCoins') ? JSON.parse(localStorage.getItem('favCoins')) : [],
     },
     reducers: {

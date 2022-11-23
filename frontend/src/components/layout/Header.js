@@ -8,6 +8,7 @@ function Header() {
         navigate('/');
     };
     const user = useSelector((state) => state.user.loggedUser);
+    console.log(user);
     return (
         <header className="main-header">
             <div className="main-header-logo">

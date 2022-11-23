@@ -1,0 +1,241 @@
+.account-creation-modal {
+  z-index: -10;
+  opacity: 0;
+  padding: 2.5rem 5rem;
+  width: 80%;
+  height: 70%;
+  background-color: aqua;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 255, 255, 0.63);
+          box-shadow: 0px 0px 22px 2px rgba(255, 255, 255, 0.63);
+  background-color: #0b1426;
+  font-family: kallisto, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
+  color: #f7f7f7;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+.account-creation-modal-welcome {
+  min-height: 20%;
+}
+
+.account-creation-modal-welcome h1 {
+  position: relative;
+  font-size: 3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.account-creation-modal-welcome h1::before, .account-creation-modal-welcome h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.account-creation-modal-welcome h1::before {
+  background: #0b1426;
+  -webkit-animation: typeWriter 4s 1s steps(34) forwards;
+          animation: typeWriter 4s 1s steps(34) forwards;
+}
+
+.account-creation-modal-welcome h1::after {
+  width: 0.125em;
+  background-color: #f7f7f7;
+  -webkit-animation: typeWriter 4s 1s steps(34) forwards, blink 750ms steps(34) infinite;
+          animation: typeWriter 4s 1s steps(34) forwards, blink 750ms steps(34) infinite;
+}
+
+.account-creation-modal-welcome p {
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+  -webkit-animation: fadeInUp 1s 5s forwards;
+          animation: fadeInUp 1s 5s forwards;
+}
+
+.account-creation-modal-tabs {
+  max-height: 80%;
+  min-height: 79.9%;
+  opacity: 0;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-animation: fadeInUp 3s 5s forwards;
+          animation: fadeInUp 3s 5s forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account-creation-modal-tabs__first__title {
+  height: 50%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.account-creation-modal-tabs__first__list {
+  height: 14rem;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.account-creation-modal-tabs__first__list::-webkit-scrollbar {
+  width: 13px;
+}
+
+.account-creation-modal-tabs__first__list::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+.account-creation-modal-tabs__first__list::-webkit-scrollbar-thumb {
+  background: #2d92e5;
+}
+
+.account-creation-modal-tabs__first__list::-webkit-scrollbar-thumb:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background: #5fa5de;
+}
+
+.account-creation-modal-tabs__second {
+  height: 100%;
+}
+
+.account-creation-modal-tabs__second p {
+  font-size: 2rem;
+}
+
+.account-creation-modal-tabs__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.account-creation-modal-tabs__actions button {
+  border: none;
+  background-color: #2d92e5;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.account-creation-modal-tabs__actions button:first-child {
+  margin-right: 1.5rem;
+}
+
+@-webkit-keyframes typeWriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typeWriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.modal-list-price {
+  min-width: 20%;
+}
+
+.modal-list-name {
+  min-width: 20%;
+}
+
+.modal-list-marketcap {
+  min-width: 20%;
+}
+
+.modal-list-action {
+  min-width: 20%;
+}
+
+.account-modal-open {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
+}
+/*# sourceMappingURL=CreateAcountModal.css.map */

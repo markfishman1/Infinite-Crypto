@@ -50,6 +50,11 @@
     // border-bottom:solid 5px $color-secondary-blue2 ;
 
 }
+.trading-panel-selected{
+    padding-bottom: .5rem;
+    border-bottom: solid 5px $color-blue;
+    color:$color-blue;
+}
 .mt-1-5{
     margin-top:1.5rem;
 }
