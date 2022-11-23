@@ -38,10 +38,11 @@ exports.login = async (req, res, next) => {
         if (!email || !password) {
             return next(new AppError('Please provide email and passowrd', 400));
         }
-        const user = await User.findOne({ email }).select('+password');
+        const user = await User.findOne({ email }).populate('walletCoins.coinType');
         if (!user || !user.correctPassword(user.password, password)) {
             return next(new AppError('Incorrect email or passowrd', 401));
         }
+        delete user.password;
         const token = signToken(user._id);
         console.log('token:', token);
         res.status(200).json({
