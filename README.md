@@ -30,4 +30,10 @@ npm install
 npm start
 ```
 
+### Here are some screenshots :)
+![Markets](https://user-images.githubusercontent.com/86410940/204790681-440144b6-2ea0-4466-b45d-001681c10248.png)
+![LIST](https://user-images.githubusercontent.com/86410940/204790716-0dd04bd8-35f0-4249-a1d7-8bdac242439c.png)
+![CoinP![buyandsell](https://user-images.githubusercontent.com/86410940/204790756-acec4e07-dd9c-47d2-973a-a6c1e1496345.png)
+age](https://user-images.githubusercontent.com/86410940/204790739-00313651-ad82-482b-bafd-9f546dd0652e.png)
+
 
